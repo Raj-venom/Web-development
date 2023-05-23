@@ -7,32 +7,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness club</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
+
         body {
+            font-family: 'Bebas Neue', sans-serif;
+            margin: 0px;
+            padding: 0px;
             /* background-image: url(img/]bg.jpg); */
             background: url("img/bg1.jpg");
-
+            height: 4500px;
+            color: white;
+          
 
         }
-        .header{
-            background-color: aliceblue;
-            color: rgb(0, 0, 0);
+
+        .left {
+            display: inline;
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 20px;
+            left: 40px
+        }
+
+        .left img {
+            width: 100px;
+            filter:invert(100%);
+        }
+
+        .mid {
+            display: block;
+            /* border: 2px solid rgb(89, 255, 0); */
+            width: 500px;
+            margin: 20px auto;
+       
+           
+        }
+
+        .right {
+            /* border: 2px solid rgb(0, 38, 255); */
+            position: absolute;
+            display: inline-block;
+            top: 35px;
+            right: 40px;
+        }
+
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font: size 25px;
+        }
+
+        .navbar li a {
+            color: rgb(246, 246, 246);
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            color: rgb(226, 78, 78);
+            text-decoration: underline;
+        }
+
+        .btn {
+            font-family: 'Bebas Neue', sans-serif;
+            color: rgb(255, 255, 255);
+            background-color: black;
+            margin: 0px 9px;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: brown;
+        }
+
+        .container{
+            border: 2px solid white;
+            margin: 125px auto;
+            padding:75px ;
+            width:33%;
+            border-radius: 20px;
+        }
+        .form-group input{
+            text-align: center;
+            display:block;
+            padding: 1px;
+            margin: 11px auto;
+            border: 2px solid black;
+            border-radius: 8px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display:block;
+            margin: 15px auto;
+            width: 35%;
         }
     </style>
 </head>
 
 <body>
     <header class="header">
+
         <div class="left">
-            left
+            <img src="img/gogo.png" alt="logo">
+            <div class="Fitness">Fitness Club</div>
+
+
         </div>
         <div class="mid">
-            mid
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#" class="active">about</a></li>
+                <li> <a href="#" class="active">Fitness Calculator</a></li>
+                <li> <a href="#" class="active">contact</a></li>
+
+            </ul>
         </div>
+
         <div class="right">
-            right
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
         </div>
     </header>
+
+    <div class="container">
+        <h1>Admission Open</h1>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" name="nam" placeholder="Enter Your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="nam" placeholder="Enter Your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="nam" placeholder="Enter Your Number">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="nam" placeholder="Enter Your Age">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
 </body>
 
 </html>
